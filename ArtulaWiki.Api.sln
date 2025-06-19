@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36121.58
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtulaWiki.Api", "ArtulaWiki.Api\ArtulaWiki.Api.csproj", "{75D7A441-4388-4F8F-A9B5-D437E3D74A08}"
-EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ArtulaWiki.App", "ArtulaWiki.App\", "{E72AF4B3-0645-6405-F625-B5F76B8CB9DE}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
@@ -26,20 +24,22 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ArtulaWiki.App", "ArtulaWik
 		SlnRelativePath = "ArtulaWiki.App\"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtulaWiki.Back", "ArtulaWiki.Back\ArtulaWiki.Back.csproj", "{2645762E-65D6-4E25-86EE-C3C4DCE3F4E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{75D7A441-4388-4F8F-A9B5-D437E3D74A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{75D7A441-4388-4F8F-A9B5-D437E3D74A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{75D7A441-4388-4F8F-A9B5-D437E3D74A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{75D7A441-4388-4F8F-A9B5-D437E3D74A08}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E72AF4B3-0645-6405-F625-B5F76B8CB9DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E72AF4B3-0645-6405-F625-B5F76B8CB9DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E72AF4B3-0645-6405-F625-B5F76B8CB9DE}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{E72AF4B3-0645-6405-F625-B5F76B8CB9DE}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{2645762E-65D6-4E25-86EE-C3C4DCE3F4E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2645762E-65D6-4E25-86EE-C3C4DCE3F4E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2645762E-65D6-4E25-86EE-C3C4DCE3F4E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2645762E-65D6-4E25-86EE-C3C4DCE3F4E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,6 @@
+@ArtulaWiki.Back_HostAddress = http://localhost:5080
+
+GET {{ArtulaWiki.Back_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
