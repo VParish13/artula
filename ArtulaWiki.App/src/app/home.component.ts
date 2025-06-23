@@ -1,12 +1,9 @@
+import { NgModule } from '@angular/core';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
-  //selector: 'app-root',
-  imports: [RouterOutlet],
+  selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrls: ['./home.component.scss']
 })
-export class App {
-  protected title = 'ArtulaWiki.App';
-}
+export class HomeComponent { }
