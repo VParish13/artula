@@ -1,8 +1,13 @@
 // Colors
-$color-primary: #0066cc;
-$color-secondary: #ffcc00;
-$color-text: #333;
-$color-bg: #f9f9f9;
+$color-primary: #f0d9bb;  // Warm parchment
+$color-primary-dark: #756353; // Earthy brown-gray
+$color-text: #212122; // Dark ink text
+$color-link: #f52c12; // Bright red-orange
+$color-link-darken: #80291d;  // Dark rusty red
+$color-grayout: #78706b;  // Cool gray-brown
+$color-contrast: #00f5c0; // Magical glow
+$color-highligh: #f09861; // Soft-torchlight glow
+$color-bg: #fffefc; // Subtle off-white
 
 // Spacing
 $spacing-sm: 0.5rem;
@@ -10,4 +15,4 @@ $spacing-md: 1rem;
 $spacing-lg: 2rem;
 
 // Fonts
-$font-stack: 'Segoe UI', Roboto, sans-serif;
+$font-stack: 'Cormorant Garamond', 'Centaur', Georgia, serif;
