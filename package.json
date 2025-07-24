@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "sass": "^1.89.2"
+  },
+  "dependencies": {
+    "@angular/common": "^20.1.2",
+    "@angular/core": "^20.1.2",
+    "@angular/platform-browser": "^20.1.2"
+  }
+}

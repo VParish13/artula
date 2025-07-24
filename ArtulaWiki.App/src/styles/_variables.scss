@@ -1,4 +1,4 @@
-// Colors
+// Colors: Light Theme
 $color-primary: #f0d9bb;  // Warm parchment
 $color-primary-dark: #756353; // Earthy brown-gray
 $color-text: #212122; // Dark ink text
@@ -6,8 +6,16 @@ $color-link: #f52c12; // Bright red-orange
 $color-link-darken: #80291d;  // Dark rusty red
 $color-grayout: #78706b;  // Cool gray-brown
 $color-contrast: #00f5c0; // Magical glow
-$color-highligh: #f09861; // Soft-torchlight glow
+$color-highlight: #f09861; // Soft-torchlight glow
 $color-bg: #fffefc; // Subtle off-white
+
+// Colors: Dark Theme
+$color-dark-primary: #2a2a2a; // Charcoal parchment
+$color-dark-primary-dark: #787878; // Stone gray
+$color-dark-text: #d9d9d9; // Chalky-white text
+$color-dark-grayout: #505050; // Dark stone gray
+$color-dark-bg: #1a1a1a; // Almost black
+// Highlights, links, etc. stay the same.
 
 // Spacing
 $spacing-sm: 0.5rem;

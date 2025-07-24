@@ -1,0 +1,134 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.dev/guide/theming
+@use '@angular/material' as mat;
+@import '_variables.scss';
+
+// Light theme palettes
+$custom-light-primary: (
+  50 : #fdf7f0,
+  100: #faecd9,
+  200: #f6e0c2,
+  300: #f2d4ab,
+  400: #f0c997,
+  500: $color-primary, // #f0d9bb
+  600: #cbb898,
+  700: $color-primary-dark, // #756353
+  800: #5e4f43,
+  900: #453a2f,
+  A100: #ffe5c4,
+  A200: #ffcc9c,
+  A400: #ffb573,
+  A700: #ff9e4a,
+  contrast: (
+    50 : $color-text,
+    100: $color-text,
+    200: $color-text,
+    300: $color-text,
+    400: $color-text,
+    500: $color-text,
+    600: $color-text,
+    700: #000,
+    800: #000,
+    900: #000,
+    A100: $color-text,
+    A200: $color-text,
+    A400: $color-text,
+    A700: $color-text,
+  )
+);
+
+$custom-light-accent: (
+  500: $color-highlight, // #f09861
+  700: $color-link-darken, // #80291d
+  contrast: (
+    500: $color-text,
+    700: #fff
+  )
+);
+
+$light-primary: mat.define-palette($custom-light-primary);
+$light-accent: mat.define-palette($custom-light-accent);
+
+$light-theme: mat.define-light-theme((
+  color: (
+    primary: $light-primary,
+    accent: $light-accent
+  ),
+  typography: mat.define-typography-config((
+    font-family: $font-stack
+  )),
+  density: 0
+));
+
+// Dark theme palettes
+$custom-dark-primary: (
+  50 : #d3d3d3,
+  100: #b9b9b9,
+  200: #9f9f9f,
+  300: #878787,
+  400: #707070,
+  500: $color-dark-primary, // #2a2a2a
+  600: #4a4a4a,
+  700: $color-dark-primary-dark, // #787878
+  800: #5e5e5e,
+  900: #444444,
+  A100: #cfcfcf,
+  A200: #bbbbbb,
+  A400: #a7a7a7,
+  A700: #939393,
+  contrast: (
+    500: $color-dark-text,
+    700: #fff
+  )
+);
+
+$custom-dark-accent: (
+  500: $color-highlight,
+  700: $color-link-darken,
+  contrast: (
+    500: $color-dark-text,
+    700: #fff
+  )
+);
+
+$custom-dark-warn: (
+  500: $color-link,
+  700: $color-link-darken,
+  contrast: (
+    500: #fff,
+    700: #fff
+  )
+);
+
+$dark-primary: mat.define-palette($custom-dark-primary);
+$dark-accent: mat.define-palette($custom-dark-accent);
+$dark-warn: mat.define-palette($custom-dark-warn);
+
+$dark-theme: mat.define-dark-theme((
+  color: (
+    primary: $dark-primary,
+    accent: $dark-accent,
+    warn: $dark-warn,
+    background: (
+      background: $color-dark-primary,  // near-black parchment
+      surface: $color-dark-primary-dark,
+      card: $color-dark-primary-dark,
+      dialog: $color-dark-text,
+      hover: $color-highlight
+    )
+  ),
+  typography: mat.define-typography-config((
+    font-family: $font-stack
+  )),
+  density: 0
+));
+
+// Apply light theme by default
+.light-theme {
+  @include mat.all-component-colors($light-theme);
+}
+
+// Apply dark theme conditionally
+.dark-theme {
+  @include mat.all-component-colors($dark-theme);
+}

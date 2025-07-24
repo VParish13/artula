@@ -1,28 +1,29 @@
-/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
-/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
-    "sourceMap": true,
     "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "ES2022",
+    "importHelpers": true,
+    "isolatedModules": true,
+    "lib": [ "ES2022", "dom", "esnext.asynciterable" ],
     "module": "ES2022",
-    "types": [],
-    "lib": ["ES2022", "dom", "esnext.asynciterable"],
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "outDir": "./dist/out-tsc",
+    "skipLibCheck": true,
+    "sourceMap": true,
     "strict": true,
     "strictNullChecks": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "skipLibCheck": true,
-    "isolatedModules": true,
-    "importHelpers": true
+    "target": "ES2022",
+    "types": [],
+    "paths": {
+      "@app/*": [ "src/app/*" ],
+      "@assets/*": [ "src/assets/*" ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
@@ -32,10 +33,6 @@
     "strictTemplates": true
   },
   "files": [],
-  "paths": {
-    "@app/*": [ "src/app/*" ],
-    "@assets/*": ["src/assets/*"]
-  },
   "references": [
     {
       "path": "./tsconfig.app.json"

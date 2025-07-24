@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArtulaWiki.Back")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5b67cf9ad5238326367834cf55a273cfd02eed7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e760867bae6fc19f5acfc7ad01862499be8208ba")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArtulaWiki.Back")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArtulaWiki.Back")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
